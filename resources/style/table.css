@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+#root {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#crud-table {
+    width: 100%;
+    border: none;
+    border-color: #e8e8e8;
+}
+
+#crud-table>thead>tr {
+    background-color: #f0f0f0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#crud-table>thead>tr>td {
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#crud-table>tfoot>tr>td {
+    column-span: all;
+}
+
+.crud-table-row:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.crud-table-row:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.crud-table-row>td {
+    height: 100%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.crud-table-row>td:nth-last-child(2),
+.crud-table-row>td:nth-child(1) {
+    width: 60px;
+}
+
+.crud-table-row>td:nth-last-child(1) {
+    width: 80px;
+}
+
+.crud-table-input {
+    background: none;
+    width: 100%;
+    height: 30px;
+    font-size: 0.9rem;
+    color: #4e4e4e;
+    text-align: center;
+    padding: 0 6px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.crud-table-input.active {
+    background-color: white;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.crud-table-input.active:focus {
+    border-color: cornflowerblue;
+}
+
+.action-btn {
+    transition: 0.1s ease-in-out;
+    background-color: transparent;
+    width: 35px;
+    height: 24px;
+    font-size: 17px;
+    margin: 0 1px;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.action-btn.hide {
+    display: none;
+}
+
+.action-btn.edit {
+    color: goldenrod;
+}
+
+.action-btn.delete {
+    color: tomato;
+}
+
+.action-btn.update {
+    background-color: white;
+    color: green;
+}
+
+.action-btn.update.active {
+    transform: scale(1.2) translateX(1px);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.action-btn.add {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    color: cornflowerblue;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5px;
+    border-radius: 1px;
+}
+
+.action-btn.save {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    color: cornflowerblue;
+    margin: 0;
+    padding-bottom: 1px;
+    border-radius: 1px;
+}
+
+.action-btn.edit:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.action-btn.delete:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.action-btn.update:hover {
+    background-color: green;
+    color: white;
+}
+
+.action-btn.add:hover,
+.action-btn.save:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
